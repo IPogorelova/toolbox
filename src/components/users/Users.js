@@ -1,7 +1,7 @@
 import * as React from 'react'
 import './Users.scss'
 
-const Users = () => {
+const Users = ({users}) => {
 
   return (
     <section className='users' id='users'>

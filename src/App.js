@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header/Header';
+import Hero from './components/hero/Hero';
+import Products from './components/products/Products';
+import Features from './components/features/Features';
+import ToolboxApp from './components/toolbox-app/ToolboxApp';
+import Users from './components/users/Users';
+import FAQ from './components/faq/FAQ';
+import Contacts from './components/contacts/Contacts';
+import Footer from './components/footer/Footer';
+
+import './App.scss';
+
+import {IDEs, profilers} from './components/products/data'
+import {featuresList} from './components/features/data'
+import {usersList} from './components/users/data'
+import {FAQsList} from './components/faq/data'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <main className='main' id='overview'>
+        {/*<Hero/>*/}
+        {/*<Products data={IDEs}/>*/}
+        {/*<Products data={profilers}/>*/}
+        {/*<Features features={featuresList}/>*/}
+        {/*<ToolboxApp/>*/}
+        {/*<Users users={usersList}/>*/}
+        {/*<FAQ items={FAQsList}/>*/}
+        {/*<Contacts/>*/}
+      </main>
+      <Footer/>
     </div>
   );
 }

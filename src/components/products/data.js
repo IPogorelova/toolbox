@@ -107,13 +107,6 @@ export const profilers = {
       ]
     },
     {
-      name: 'WebStorm',
-      icon: '/images/icon.jpg',
-      tags: [
-        'mysql'
-      ]
-    },
-    {
       name: 'ReSharper C++',
       icon: '/images/icon.jpg',
       tags: [

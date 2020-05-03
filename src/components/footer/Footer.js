@@ -28,19 +28,19 @@ const Footer = () => {
           <ul>
             Follow JetBrains
             <li>
-              <a href='#'>Facebook</a>
+              <a href='#' title='Facebook'></a>
             </li>
             <li>
-              <a href='#'>Twitter</a>
+              <a href='#' title='Twitter'></a>
             </li>
             <li>
-              <a href='#'>LinkedIn</a>
+              <a href='#' title='LinkedIn'></a>
             </li>
             <li>
-              <a href='#'>YouTube</a>
+              <a href='#' title='YouTube'></a>
             </li>
             <li>
-              <a href='#'>Blog</a>
+              <a href='#' title='Blog'></a>
             </li>
           </ul>
         </div>
