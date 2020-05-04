@@ -1,7 +1,10 @@
-@import 'src/components/variables';
+@import 'variables';
 
 @mixin smallDesktop {
   @media (max-width: $smallDesktop) { @content; }
+}
+@mixin wideTablet {
+  @media (max-width: $wideTablet) { @content; }
 }
 @mixin tablet {
   @media (max-width: $tablet) { @content; }

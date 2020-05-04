@@ -4,6 +4,7 @@
 
 body {
   width: 100vw;
+  min-height: 100vh;
   margin: 0;
   overflow-x: hidden;
   background-color: $white;
@@ -11,6 +12,14 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: $black;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 a {
@@ -42,7 +51,7 @@ li {
   margin: 0 auto;
   max-width: 1200px;
 
-  @include tablet {
+  @include smallDesktop {
     width: 95%;
   }
 
