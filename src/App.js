@@ -25,7 +25,7 @@ function App() {
         {/*<Hero/>*/}
         <Products data={IDEs} rowAmount={4}/>
         <Products data={profilers} rowAmount={3}/>
-        {/*<Features features={featuresList}/>*/}
+        <Features features={featuresList}/>
         {/*<ToolboxApp/>*/}
         {/*<Users users={usersList}/>*/}
         {/*<FAQ items={FAQsList}/>*/}

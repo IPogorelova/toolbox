@@ -1,0 +1,27 @@
+.features-item {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__description {
+    margin-top: 0;
+
+    @include tablet {
+      max-width: 500px;
+    }
+  }
+}
