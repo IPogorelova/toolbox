@@ -1,0 +1,60 @@
+.hero {
+
+  @include wideTablet {
+
+    .inner-row {
+      flex-direction: column;
+    }
+
+    .inner-col {
+      width: 100%;
+
+      &:first-of-type {
+        order: 2;
+      }
+
+      &:last-of-type {
+        margin-bottom: 60px;
+        order: 1;
+      }
+    }
+  }
+
+  &__image {
+    width: 90%;
+    max-width: 400px;
+
+    @include wideTablet {
+      display: block;
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__button {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}

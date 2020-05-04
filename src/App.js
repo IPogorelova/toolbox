@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <Header/>
       <main className='main' id='overview'>
-        {/*<Hero/>*/}
+        <Hero/>
         <Products data={IDEs} rowAmount={4}/>
         <Products data={profilers} rowAmount={3}/>
         <Features features={featuresList}/>
