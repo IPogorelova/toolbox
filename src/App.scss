@@ -1,6 +1,6 @@
-@import 'utils/variables';
-@import 'utils/mixins';
-@import 'utils/global';
+@import 'components/variables';
+@import 'components/mixins';
+@import 'components/global';
 @import 'components/button/Button.scss';
 @import 'components/contacts/Contacts.scss';
 @import 'components/faq/FAQ.scss';
@@ -9,5 +9,7 @@
 @import 'components/header/Header.scss';
 @import 'components/hero/Hero.scss';
 @import 'components/products/Products.scss';
+@import 'components/products/ProductsItem.scss';
+@import 'components/products/Tag.scss';
 @import 'components/toolbox-app/ToolboxApp.scss';
 @import 'components/users/Users.scss';

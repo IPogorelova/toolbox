@@ -1,6 +1,4 @@
 import * as React from 'react'
-import logo from '../../images/jetbrains.svg'
-import logoMob from '../../images/jetbrains.svg'
 
 const Footer = () => {
 
@@ -10,8 +8,8 @@ const Footer = () => {
         <div className='footer__row'>
           <img
             className='footer__logo'
-            srcSet={`${logo} 122w,
-                     ${logoMob} 48w`}
+            srcSet={`/images/jetbrains.svg 122w,
+                     /images/jetbrains.svg 48w`}
             sizes='(max-width: 500px) 48px,
                    122px'
             src=''

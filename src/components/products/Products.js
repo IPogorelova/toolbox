@@ -1,10 +1,11 @@
 import * as React from 'react'
-import './Products.scss'
+import cn from 'classnames'
+import {useMatchMedia} from '../../utils/hooks'
 
-const ProductIcon = ({name, icon}) => {
+const ProductIcon = ({name, icon, rowAmount}) => {
   return (
-    <div className='products__icon'>
-      <img src={icon} alt={name}/>
+    <div className={cn('products__icon', {'products__icon_3' : rowAmount === 3})}>
+      <img src={`/images/products/${icon}`} alt={name}/>
     </div>
   )
 }
@@ -12,37 +13,73 @@ const ProductIcon = ({name, icon}) => {
 const ProductInfo = ({name, tags}) => {
   return (
     <div className='products__item products-item'>
-      <span className='product-item__name'>{name}</span>
-      <div className='product-item__tags'>
-        {tags.map((i, tag) => <span key={`tag-${i}`} className='product-item__tag'>{tag}</span>)}
+      <span className='products-item__name'>{name}</span>
+      <div className='products-item__tags'>
+        {tags.map((tag, i) => <span key={`tag-${i}`} className='products-item__tag tag'>{tag}</span>)}
       </div>
     </div>
   )
 }
 
-const Products = (data) => {
-  let {title, description, items} = data
-
+const ProductInfoMobile = ({icon, name, tags}) => {
   return (
-    <div className='products'>
-      <div className='inner-col'>
-        <h2 className='products__title'>{title}</h2>
-        <div className='products__icons'>
-          {
-            items.map((i, item) => <ProductIcon key={`icon-${i}`} name={item.name} icon={item.icon}/>)
-          }
-        </div>
-      </div>
-      <div className='inner-col'>
-        {description.length && <p className='products__description'>{description}</p>}
-        <div className='products__info'>
-          {
-            items.map((i, item) => <ProductInfo key={`product-${i}`} name={item.name} tags={item.tags}/>)
-          }
-        </div>
+    <div className='products__item products-item'>
+      <img src={`/images/products/${icon}`} alt={name}/>
+      <span className='products-item__name'>{name}</span>
+      <div className='products-item__tags'>
+        {tags.map((tag, i) => <span key={`tag-${i}`} className='products-item__tag tag'>{tag}</span>)}
       </div>
     </div>
   )
+}
+
+const Products = ({data, rowAmount}) => {
+  let {title, description, items} = data
+
+  const isMobile = useMatchMedia('screen and (min-width: 768px)')
+
+  if (isMobile) {
+    return (
+      <section className='products container'>
+        {description && <p className='products__description'>{description}</p>}
+        <h2 className='products__title'>{title}</h2>
+        <div className='products__items'>
+          {
+            items.map((item, i) => <ProductInfoMobile key={`item-${i}`} icon={item.icon} name={item.name} tags={item.tags}/>)
+          }
+        </div>
+      </section>
+    )
+  } else {
+    return (
+      <section className='products container'>
+        <div className='inner-row products__title-container'>
+          <div className='inner-col'>
+            <h2 className='products__title'>{title}</h2>
+          </div>
+          <div className='inner-col'>
+            {description && <p className='products__description'>{description}</p>}
+          </div>
+          </div>
+        <div className='inner-row'>
+          <div className='inner-col'>
+            <div className='products__icons'>
+              {
+                items.map((item, i) => <ProductIcon key={`icon-${i}`} name={item.name} icon={item.icon} rowAmount={rowAmount}/>)
+              }
+            </div>
+          </div>
+          <div className='inner-col'>
+            <div className='products__info'>
+              {
+                items.map((item, i) => <ProductInfo key={`product-${i}`} name={item.name} tags={item.tags}/>)
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
 }
 
 export default Products

@@ -4,7 +4,7 @@ export const IDEs = {
   items: [
     {
       name: 'Intellij IDEA Ultimate',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'Kotlin',
         'Java'
@@ -12,7 +12,7 @@ export const IDEs = {
     },
     {
       name: 'Rider',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'C#',
         '.NET'
@@ -20,21 +20,21 @@ export const IDEs = {
     },
     {
       name: 'ReSharper Ultimate',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'C++'
       ]
     },
     {
       name: 'DataGrip',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'C'
       ]
     },
     {
       name: 'PhpStorm',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'mysql',
         'database'
@@ -42,21 +42,21 @@ export const IDEs = {
     },
     {
       name: 'WebStorm',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'mysql'
       ]
     },
     {
       name: 'RubyMine',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'Ruby'
       ]
     },
     {
       name: 'AppCode',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'mysql',
         'database'
@@ -64,14 +64,14 @@ export const IDEs = {
     },
     {
       name: 'CLion',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'Ruby'
       ]
     },
     {
       name: 'PyCharm',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'mysql',
         'database'
@@ -86,7 +86,7 @@ export const profilers = {
   items: [
     {
       name: 'ReSharper',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'mysql',
         'database'
@@ -94,28 +94,28 @@ export const profilers = {
     },
     {
       name: 'dotTrace',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'Ruby'
       ]
     },
     {
       name: 'dotMemory',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'C'
       ]
     },
     {
       name: 'ReSharper C++',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'C++'
       ]
     },
     {
       name: 'dotCover',
-      icon: '/images/icon.jpg',
+      icon: 'WebStorm.png',
       tags: [
         'mysql'
       ]

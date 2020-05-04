@@ -1,0 +1,41 @@
+.products-item {
+
+  @include tablet {
+
+    img {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $black;
+    transition: color $base-animation;
+  }
+
+  &__tags {
+    display: flex;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__tag {
+
+    @include mobile {
+      margin-bottom: 5px;
+    }
+  }
+
+  &_active {
+
+    .product-item__name {
+      color: $orange;
+    }
+  }
+}

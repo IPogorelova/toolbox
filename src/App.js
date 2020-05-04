@@ -16,14 +16,15 @@ import {featuresList} from './components/features/data'
 import {usersList} from './components/users/data'
 import {FAQsList} from './components/faq/data'
 
+
 function App() {
   return (
     <div className="App">
       <Header/>
       <main className='main' id='overview'>
         {/*<Hero/>*/}
-        {/*<Products data={IDEs}/>*/}
-        {/*<Products data={profilers}/>*/}
+        <Products data={IDEs} rowAmount={4}/>
+        <Products data={profilers} rowAmount={3}/>
         {/*<Features features={featuresList}/>*/}
         {/*<ToolboxApp/>*/}
         {/*<Users users={usersList}/>*/}
