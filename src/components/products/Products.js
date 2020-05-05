@@ -10,9 +10,9 @@ const ProductIcon = ({name, icon, rowAmount}) => {
   )
 }
 
-const ProductInfo = ({name, tags}) => {
+const ProductInfo = ({index, name, tags, activeItem, setActiveItem}) => {
   return (
-    <div className='products__item products-item'>
+    <div className={cn('products__item products-item', {'products-item_active' : activeItem === index})}>
       <span className='products-item__name'>{name}</span>
       <div className='products-item__tags'>
         {tags.map((tag, i) => <span key={`tag-${i}`} className='products-item__tag tag'>{tag}</span>)}
@@ -22,6 +22,7 @@ const ProductInfo = ({name, tags}) => {
 }
 
 const ProductInfoMobile = ({icon, name, tags}) => {
+  console.log('hey!!')
   return (
     <div className='products__item products-item'>
       <img src={`/images/products/${icon}`} alt={name}/>
@@ -35,6 +36,7 @@ const ProductInfoMobile = ({icon, name, tags}) => {
 
 const Products = ({data, rowAmount}) => {
   let {title, description, items} = data
+  let [activeItem, setActiveItem] = React.useState(null)
 
   const isMobile = useMatchMedia('screen and (min-width: 768px)')
 
@@ -45,7 +47,14 @@ const Products = ({data, rowAmount}) => {
         <h2 className='products__title'>{title}</h2>
         <div className='products__items'>
           {
-            items.map((item, i) => <ProductInfoMobile key={`item-${i}`} icon={item.icon} name={item.name} tags={item.tags}/>)
+            items.map((item, i) =>
+              <ProductInfoMobile
+                key={`item-${i}`}
+                icon={item.icon}
+                name={item.name}
+                tags={item.tags}
+              />
+            )
           }
         </div>
       </section>
@@ -65,14 +74,32 @@ const Products = ({data, rowAmount}) => {
           <div className='inner-col'>
             <div className='products__icons'>
               {
-                items.map((item, i) => <ProductIcon key={`icon-${i}`} name={item.name} icon={item.icon} rowAmount={rowAmount}/>)
+                items.map((item, i) =>
+                  <ProductIcon
+                    key={`icon-${i}`}
+                    index={i}
+                    name={item.name}
+                    icon={item.icon}
+                    rowAmount={rowAmount}
+                    onMouseEnter={() => setActiveItem(i)}
+                  />
+                )
               }
             </div>
           </div>
           <div className='inner-col'>
             <div className='products__info'>
               {
-                items.map((item, i) => <ProductInfo key={`product-${i}`} name={item.name} tags={item.tags}/>)
+                items.map((item, i) =>
+                  <ProductInfo
+                    key={`product-${i}`}
+                    name={item.name}
+                    tags={item.tags}
+                    activeItem={activeItem}
+                    setActiveItem={setActiveItem}
+                    onMouseEnter={() => {setActiveItem(i); console.log(i, activeItem)}}
+                  />
+                )
               }
             </div>
           </div>
