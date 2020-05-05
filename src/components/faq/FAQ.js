@@ -1,36 +1,45 @@
 import * as React from 'react'
-import './FAQ.scss'
 
-const FAQItem = ({question, answer}) => {
-  return (
-    <div className='faq__item'>
-      <p className='faq__question'>{question}</p>
-      <p className='faq__answer'>{answer}</p>
-    </div>
-  )
-}
-
-const FAQ = ({items}) => {
+const FAQ = () => {
 
   return (
-    <section className='faq' id='faq'>
-      <h2>FAQ</h2>
+    <section className='faq container' id='faq'>
+      <h2 className='section-title'>FAQ</h2>
       <div className='inner-row'>
         <div className='inner-col'>
-          <FAQItem key='faq-item-1' question={items[0].question} answer={items[0].answer}/>
+          <div className='faq__item'>
+            <p className='faq__question'>
+              Can I upgrade my existing IntelliJ IDEA, PyCharm, WebStorm or ReSharper Ultimate
+              or any other JetBrains IDE license to the All Products Pack?
+            </p>
+            <p className='faq__answer'>
+              Yes, your existing licenses to any JetBrains desktop products make you eligible to purchase
+              new All Products Pack subscriptions with an additional discount.
+            </p>
+          </div>
         </div>
         <div className='inner-col'>
-          <FAQItem key='faq-item-2' question={items[1].question} answer={items[1].answer}/>
+          <div className='faq__item'>
+            <p className='faq__question'>How to upgrade to All Products Pack?</p>
+            <p className='faq__answer'>
+              Yes, your existing licenses to any JetBrains desktop products make you eligible to purchase
+              new All Products Pack subscriptions with an additional discount. Yes, your existing licenses
+              to any JetBrains desktop products make you eligible to purchase new All Products Pack subscriptions
+              with an additional <a href="#">discount</a>.
+            </p>
+          </div>
         </div>
       </div>
       <div className='inner-row'>
         <div className='inner-col'>
-          <img src='' alt='Man greetings somebody'/>
+          <img className='faq__image' src='/images/illustration.png' alt='Man greetings somebody'/>
         </div>
         <div className='inner-col'>
           <div className='faq__offer'>
-            <p>Enhance ..!</p>
-            <a href='#'>Download</a>
+            <p className='section-title'>
+              Enhance your productivity and speed up coding with JetBrains tools!
+            </p>
+            <a className='faq__download-link' href='#'>Download the All Products Pack infographics</a>
           </div>
         </div>
       </div>

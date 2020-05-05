@@ -14,7 +14,6 @@ import './App.scss';
 import {IDEs, profilers} from './components/products/data'
 import {featuresList} from './components/features/data'
 import {usersList} from './components/users/data'
-import {FAQsList} from './components/faq/data'
 
 
 function App() {
@@ -25,10 +24,11 @@ function App() {
         <Hero/>
         <Products data={IDEs} rowAmount={4}/>
         <Products data={profilers} rowAmount={3}/>
+        <hr className='separator'/>
         <Features features={featuresList}/>
         {/*<ToolboxApp/>*/}
         {/*<Users users={usersList}/>*/}
-        {/*<FAQ items={FAQsList}/>*/}
+        <FAQ/>
         {/*<Contacts/>*/}
       </main>
       <Footer/>

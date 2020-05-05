@@ -1,0 +1,99 @@
+.faq {
+
+  .inner-row {
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  .inner-col {
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    margin-bottom: 80px;
+
+    @include tablet {
+      max-width: 500px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__question {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__answer {
+    color: $grey-dark;
+
+    a {
+      color: $orange;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__offer {
+
+    .section-title {
+      max-width: 350px;
+
+      @include tablet {
+        max-width: 500px;
+      }
+
+      @include mobile {
+        font-weight: 400;
+        max-width: 320px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__download-link {
+    display: block;
+    position: relative;
+    margin-top: 50px;
+    padding-left: 35px;
+    color: $orange;
+
+    @include mobile {
+      margin-top: 20px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 15px;
+      height: auto;
+      min-height: 15px;
+      margin: auto 0;
+    }
+  }
+}

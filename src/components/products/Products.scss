@@ -1,11 +1,12 @@
 .products {
+  margin-bottom: 0;
+
+  & + .products {
+    margin-top: 40px;
+  }
 
   &__title-container {
     align-items: flex-end;
-  }
-
-  &__title {
-    font-size: 24px;
   }
 
   &__description {

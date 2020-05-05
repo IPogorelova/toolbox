@@ -64,7 +64,7 @@ const Products = ({data, rowAmount}) => {
       <section className='products container'>
         <div className='inner-row products__title-container'>
           <div className='inner-col'>
-            <h2 className='products__title'>{title}</h2>
+            <h2 className='section-title'>{title}</h2>
           </div>
           <div className='inner-col'>
             {description && <p className='products__description'>{description}</p>}
