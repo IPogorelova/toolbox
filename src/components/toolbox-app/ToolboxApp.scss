@@ -1,0 +1,103 @@
+.toolbox-app {
+  width: 100vw;
+  height: 300px;
+  min-height: fit-content;
+  margin-bottom: 80px;
+  background-color: $black;
+
+  @include mobile {
+    height: 250px;
+    margin-bottom: 60px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: fit-content;
+
+    @include smallDesktop {
+      display: flex;
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      margin: 0;
+      padding: 0 15px;
+    }
+  }
+
+  &__image {
+    width: auto;
+    height: 100%;
+    margin-right: 60px;
+
+    @include smallDesktop {
+      display: flex;
+      justify-content: flex-end;
+      width: 42%;
+      margin-right: 10%;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-right: 100px;
+
+    @include smallDesktop {
+      width: 47%;
+      margin-top: 20px;
+      margin-right: unset;
+    }
+
+    @include tablet {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: $white;
+
+    @include smallDesktop {
+      max-width: 350px;
+    }
+
+    @include tablet {
+      max-width: unset;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    color: $grey;
+  }
+
+  &__link {
+    color: $orange;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

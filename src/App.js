@@ -26,7 +26,7 @@ function App() {
         <Products data={profilers} rowAmount={3}/>
         <hr className='separator'/>
         <Features features={featuresList}/>
-        {/*<ToolboxApp/>*/}
+        <ToolboxApp/>
         {/*<Users users={usersList}/>*/}
         <FAQ/>
         {/*<Contacts/>*/}
