@@ -32,7 +32,7 @@ const FAQ = () => {
       </div>
       <div className='inner-row'>
         <div className='inner-col'>
-          <img className='faq__image' src='/images/illustration.png' alt='Man greetings somebody'/>
+          <img className='faq__image' src='/images/faq.png' alt='Man greetings somebody'/>
         </div>
         <div className='inner-col'>
           <div className='faq__offer'>

@@ -5,7 +5,7 @@ export const IDEs = {
     {
       id: 'intellij',
       name: 'Intellij IDEA Ultimate',
-      icon: 'WebStorm.png',
+      icon: 'idea.svg',
       tags: [
         'Kotlin',
         'Java'
@@ -14,7 +14,7 @@ export const IDEs = {
     {
       id: 'rider',
       name: 'Rider',
-      icon: 'WebStorm.png',
+      icon: 'rider.svg',
       tags: [
         'C#',
         '.NET'
@@ -23,7 +23,7 @@ export const IDEs = {
     {
       id: 'resharper-ult',
       name: 'ReSharper Ultimate',
-      icon: 'WebStorm.png',
+      icon: 're-sharper.svg',
       tags: [
         'C++'
       ]
@@ -31,7 +31,7 @@ export const IDEs = {
     {
       id: 'datagrip',
       name: 'DataGrip',
-      icon: 'WebStorm.png',
+      icon: 'data-grip.svg',
       tags: [
         'C'
       ]
@@ -39,7 +39,7 @@ export const IDEs = {
     {
       id: 'phpstorm',
       name: 'PhpStorm',
-      icon: 'WebStorm.png',
+      icon: 'php-storm.svg',
       tags: [
         'mysql',
         'database'
@@ -48,7 +48,7 @@ export const IDEs = {
     {
       id: 'webstorm',
       name: 'WebStorm',
-      icon: 'WebStorm.png',
+      icon: 'web-storm.svg',
       tags: [
         'mysql'
       ]
@@ -56,7 +56,7 @@ export const IDEs = {
     {
       id: 'rubymine',
       name: 'RubyMine',
-      icon: 'WebStorm.png',
+      icon: 'ruby-mine.svg',
       tags: [
         'Ruby'
       ]
@@ -64,7 +64,7 @@ export const IDEs = {
     {
       id: 'appcode',
       name: 'AppCode',
-      icon: 'WebStorm.png',
+      icon: 'app-code.svg',
       tags: [
         'mysql',
         'database'
@@ -73,7 +73,7 @@ export const IDEs = {
     {
       id: 'clion',
       name: 'CLion',
-      icon: 'WebStorm.png',
+      icon: 'c-lion.svg',
       tags: [
         'Ruby'
       ]
@@ -81,7 +81,7 @@ export const IDEs = {
     {
       id: 'pycharm',
       name: 'PyCharm',
-      icon: 'WebStorm.png',
+      icon: 'py-charm.svg',
       tags: [
         'mysql',
         'database'
@@ -97,7 +97,7 @@ export const profilers = {
     {
       id: 'resharper',
       name: 'ReSharper',
-      icon: 'WebStorm.png',
+      icon: 're-sharper.svg',
       tags: [
         'mysql',
         'database'
@@ -106,7 +106,7 @@ export const profilers = {
     {
       id: 'dottrace',
       name: 'dotTrace',
-      icon: 'WebStorm.png',
+      icon: 'dot-trace.svg',
       tags: [
         'Ruby'
       ]
@@ -114,7 +114,7 @@ export const profilers = {
     {
       id: 'dotmemory',
       name: 'dotMemory',
-      icon: 'WebStorm.png',
+      icon: 'dot-memory.svg',
       tags: [
         'C'
       ]
@@ -122,7 +122,7 @@ export const profilers = {
     {
       id: 'resharper-c',
       name: 'ReSharper C++',
-      icon: 'WebStorm.png',
+      icon: 're-sharper-c.svg',
       tags: [
         'C++'
       ]
@@ -130,7 +130,7 @@ export const profilers = {
     {
       id: 'dotcover',
       name: 'dotCover',
-      icon: 'WebStorm.png',
+      icon: 'dot-cover.svg',
       tags: [
         'mysql'
       ]

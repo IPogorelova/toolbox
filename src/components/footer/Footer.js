@@ -1,4 +1,9 @@
 import * as React from 'react'
+import {ReactComponent as Fb} from './images/fb.svg'
+import {ReactComponent as Blog} from './images/jbblog.svg'
+import {ReactComponent as LinkedIn} from './images/linkedin.svg'
+import {ReactComponent as Twitter} from './images/twitter.svg'
+import {ReactComponent as YouTube} from './images/youtube.svg'
 
 const Footer = () => {
 
@@ -7,12 +12,13 @@ const Footer = () => {
       <div className='container'>
         <div className='footer__row'>
           <img
-            className='footer__logo'
-            srcSet={`/images/jetbrains.svg 122w,
-                     /images/jetbrains.svg 48w`}
-            sizes='(max-width: 500px) 48px,
-                   122px'
-            src=''
+            className='footer__logo footer__logo_full'
+            src='/images/jb.svg'
+            alt='JetBrains logo'
+          />
+          <img
+            className='footer__logo footer__logo_mob'
+            src='/images/jb-sm.svg'
             alt='JetBrains logo'
           />
           <div className='footer__col'>
@@ -36,19 +42,29 @@ const Footer = () => {
             <span className='footer__subtitle footer__text'>Follow JetBrains</span>
             <ul className='footer__socials'>
               <li className='footer__icon'>
-                <a href='#' title='JetBrains on Facebook'/>
+                <a href='#' title='JetBrains on Facebook'>
+                  <Fb/>
+                </a>
               </li>
               <li className='footer__icon'>
-                <a href='#' title='JetBrains on Twitter'/>
+                <a href='#' title='JetBrains on Twitter'>
+                  <Twitter/>
+                </a>
               </li>
               <li className='footer__icon'>
-                <a href='#' title='JetBrains on LinkedIn'/>
+                <a href='#' title='JetBrains on LinkedIn'>
+                  <LinkedIn/>
+                </a>
               </li>
               <li className='footer__icon'>
-                <a href='#' title='JetBrains on YouTube'/>
+                <a href='#' title='JetBrains on YouTube'>
+                  <YouTube/>
+                </a>
               </li>
               <li className='footer__icon'>
-                <a href='#' title='JetBrains blog' />
+                <a href='#' title='JetBrains blog'>
+                  <Blog/>
+                </a>
               </li>
             </ul>
           </div>

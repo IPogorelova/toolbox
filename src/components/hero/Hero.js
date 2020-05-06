@@ -6,7 +6,7 @@ const Hero = () => {
     <section className='hero container'>
       <div className='inner-row'>
         <div className='inner-col'>
-          <img className='hero__image' src='/images/illustration.png' alt='Women at the PC with icons of JetBrains products'/>
+          <img className='hero__image' src='/images/hero.png' alt='Women at the PC with icons of JetBrains products'/>
         </div>
         <div className='inner-col'>
           <h1 className="title hero__title">All Products Pack</h1>

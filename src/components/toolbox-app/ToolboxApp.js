@@ -7,9 +7,9 @@ const ToolboxApp = () => {
       <div className="toolbox-app__inner">
         <picture className='toolbox-app__image'>
           {/*<source srcSet='images/page.webp' type='image/webp'/>*/}
-          <source srcSet='images/page.png' type='image/png'/>
+          <source srcSet='images/page.jpg' type='image/png'/>
 
-          <img src='/images/page.png' alt='Toolbox App panel'/>
+          <img src='/images/page.jpg' alt='Toolbox App panel'/>
         </picture>
         <div className='toolbox-app__info'>
           <h2 className='section-title toolbox-app__title'>Maintain your tools with the Toolbox App</h2>
