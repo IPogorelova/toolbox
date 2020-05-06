@@ -1,6 +1,117 @@
 .contacts {
   width: 100vw;
-  margin-bottom: 0px;
-  padding: 100px 0;
+  margin-bottom: 0;
+  padding: 96px 0;
   background-color: $grey;
+
+  @include tablet {
+    padding: 64px 0 62px;
+  }
+
+  .container {
+    margin-bottom: 0;
+  }
+
+  .inner-row {
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  .inner-col {
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 31px;
+    line-height: 40px;
+
+    @include tablet {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+
+    @include tablet {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      margin-bottom: 48px;
+    }
+
+    .text-input {
+      width: 100%;
+      max-width: 385px;
+      background-image: url('./images/enter.svg');
+      background-size: 24px 24px;
+      background-position: calc(100% - 16px) center;
+      background-repeat: no-repeat;
+    }
+
+    .check {
+      max-width: 245px;
+      margin-top: 29px;
+      margin-bottom: 24px;
+
+      @include tablet {
+        margin-top: 21px;
+        margin-bottom: 16px;
+      }
+
+      a {
+        color: $orange;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .button {
+      width: 150px;
+    }
+  }
+
+  &__socials {
+    padding: 0;
+    margin-top: 24px;
+  }
+
+  &__social-item {
+    margin-bottom: 24px;
+
+    @include tablet {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 28px;
+    color: $orange;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    svg {
+      margin-right: 16px;
+    }
+  }
 }
