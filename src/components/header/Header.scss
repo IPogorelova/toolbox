@@ -5,6 +5,7 @@
   height: 76px;
   background-color: $white;
   border-bottom: 1px solid $grey-light;
+  z-index: 2;
 
   @include mobile {
     height: 58px;

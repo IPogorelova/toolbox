@@ -7,6 +7,11 @@
 
   &__title-container {
     align-items: flex-end;
+    margin-bottom: 30px;
+
+    .section-title {
+      margin-bottom: 0;
+    }
   }
 
   &__description {
@@ -27,6 +32,7 @@
     min-width: 85px;
     margin: 0 10px 45px;
     cursor: pointer;
+    transition: opacity $base-animation;
 
     @include smallDesktop {
       display: flex;
@@ -58,6 +64,10 @@
           width: calc(100% / 12 * 4 - 40px);
         }
       }
+    }
+
+    &_disabled {
+      opacity: 0.2;
     }
   }
 

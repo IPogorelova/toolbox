@@ -2,18 +2,26 @@ import * as React from 'react'
 import cn from 'classnames'
 import {useMatchMedia} from '../../utils/hooks'
 
-const ProductIcon = ({name, icon, rowAmount}) => {
+const ProductIcon = ({id, name, icon, rowAmount, activeItem, setActiveItem}) => {
   return (
-    <div className={cn('products__icon', {'products__icon_3' : rowAmount === 3})}>
+    <div
+      className={cn('products__icon',
+                   {'products__icon_3' : rowAmount === 3},
+                   {'products__icon_disabled' : (activeItem !== id && activeItem !== null)})}
+      onMouseEnter={() => setActiveItem(id)}
+    >
       <img src={`/images/products/${icon}`} alt={name}/>
     </div>
   )
 }
 
-const ProductInfo = ({index, name, tags, activeItem, setActiveItem}) => {
+const ProductInfo = ({id, name, tags, activeItem, setActiveItem}) => {
   return (
-    <div className={cn('products__item products-item', {'products-item_active' : activeItem === index})}>
-      <span className='products-item__name'>{name}</span>
+    <div
+      className={cn('products__item products-item', {'products-item_active' : activeItem === id})}
+      onMouseEnter={() => setActiveItem(id)}
+    >
+      <a href='#' className='products-item__name'>{name}</a>
       <div className='products-item__tags'>
         {tags.map((tag, i) => <span key={`tag-${i}`} className='products-item__tag tag'>{tag}</span>)}
       </div>
@@ -22,11 +30,10 @@ const ProductInfo = ({index, name, tags, activeItem, setActiveItem}) => {
 }
 
 const ProductInfoMobile = ({icon, name, tags}) => {
-  console.log('hey!!')
   return (
     <div className='products__item products-item'>
       <img src={`/images/products/${icon}`} alt={name}/>
-      <span className='products-item__name'>{name}</span>
+      <a href='#' className='products-item__name'>{name}</a>
       <div className='products-item__tags'>
         {tags.map((tag, i) => <span key={`tag-${i}`} className='products-item__tag tag'>{tag}</span>)}
       </div>
@@ -72,32 +79,40 @@ const Products = ({data, rowAmount}) => {
           </div>
         <div className='inner-row'>
           <div className='inner-col'>
-            <div className='products__icons'>
+            <div
+              className='products__icons'
+              onMouseLeave={() => setActiveItem(null)}
+            >
               {
                 items.map((item, i) =>
                   <ProductIcon
                     key={`icon-${i}`}
-                    index={i}
+                    id={item.id}
                     name={item.name}
                     icon={item.icon}
                     rowAmount={rowAmount}
-                    onMouseEnter={() => setActiveItem(i)}
+                    activeItem={activeItem}
+                    setActiveItem={setActiveItem}
                   />
                 )
               }
             </div>
           </div>
           <div className='inner-col'>
-            <div className='products__info'>
+            <div
+              className='products__info'
+              onMouseEnter={() => setActiveItem('')}
+              onMouseLeave={() => setActiveItem(null)}
+            >
               {
                 items.map((item, i) =>
                   <ProductInfo
                     key={`product-${i}`}
+                    id={item.id}
                     name={item.name}
                     tags={item.tags}
                     activeItem={activeItem}
                     setActiveItem={setActiveItem}
-                    onMouseEnter={() => {setActiveItem(i); console.log(i, activeItem)}}
                   />
                 )
               }

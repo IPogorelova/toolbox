@@ -3,6 +3,7 @@ export const IDEs = {
   description: 'Get access to all JetBrains desktop tools including 10 IDEs, 2 extensions and 3 profilers',
   items: [
     {
+      id: 'intellij',
       name: 'Intellij IDEA Ultimate',
       icon: 'WebStorm.png',
       tags: [
@@ -11,6 +12,7 @@ export const IDEs = {
       ]
     },
     {
+      id: 'rider',
       name: 'Rider',
       icon: 'WebStorm.png',
       tags: [
@@ -19,6 +21,7 @@ export const IDEs = {
       ]
     },
     {
+      id: 'resharper-ult',
       name: 'ReSharper Ultimate',
       icon: 'WebStorm.png',
       tags: [
@@ -26,6 +29,7 @@ export const IDEs = {
       ]
     },
     {
+      id: 'datagrip',
       name: 'DataGrip',
       icon: 'WebStorm.png',
       tags: [
@@ -33,6 +37,7 @@ export const IDEs = {
       ]
     },
     {
+      id: 'phpstorm',
       name: 'PhpStorm',
       icon: 'WebStorm.png',
       tags: [
@@ -41,6 +46,7 @@ export const IDEs = {
       ]
     },
     {
+      id: 'webstorm',
       name: 'WebStorm',
       icon: 'WebStorm.png',
       tags: [
@@ -48,6 +54,7 @@ export const IDEs = {
       ]
     },
     {
+      id: 'rubymine',
       name: 'RubyMine',
       icon: 'WebStorm.png',
       tags: [
@@ -55,6 +62,7 @@ export const IDEs = {
       ]
     },
     {
+      id: 'appcode',
       name: 'AppCode',
       icon: 'WebStorm.png',
       tags: [
@@ -63,6 +71,7 @@ export const IDEs = {
       ]
     },
     {
+      id: 'clion',
       name: 'CLion',
       icon: 'WebStorm.png',
       tags: [
@@ -70,6 +79,7 @@ export const IDEs = {
       ]
     },
     {
+      id: 'pycharm',
       name: 'PyCharm',
       icon: 'WebStorm.png',
       tags: [
@@ -85,6 +95,7 @@ export const profilers = {
   description: '',
   items: [
     {
+      id: 'resharper',
       name: 'ReSharper',
       icon: 'WebStorm.png',
       tags: [
@@ -93,6 +104,7 @@ export const profilers = {
       ]
     },
     {
+      id: 'dottrace',
       name: 'dotTrace',
       icon: 'WebStorm.png',
       tags: [
@@ -100,6 +112,7 @@ export const profilers = {
       ]
     },
     {
+      id: 'dotmemory',
       name: 'dotMemory',
       icon: 'WebStorm.png',
       tags: [
@@ -107,6 +120,7 @@ export const profilers = {
       ]
     },
     {
+      id: 'resharper-c',
       name: 'ReSharper C++',
       icon: 'WebStorm.png',
       tags: [
@@ -114,6 +128,7 @@ export const profilers = {
       ]
     },
     {
+      id: 'dotcover',
       name: 'dotCover',
       icon: 'WebStorm.png',
       tags: [
