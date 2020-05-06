@@ -29,7 +29,7 @@ function App() {
         <ToolboxApp/>
         {/*<Users users={usersList}/>*/}
         <FAQ/>
-        {/*<Contacts/>*/}
+        <Contacts/>
       </main>
       <Footer/>
     </div>

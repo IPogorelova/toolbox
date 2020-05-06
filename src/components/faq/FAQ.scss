@@ -1,4 +1,13 @@
 .faq {
+  margin-bottom: 40px;
+
+  @include smallDesktop {
+    margin-bottom: 80px;
+  }
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
 
   .inner-row {
 
