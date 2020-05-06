@@ -1,0 +1,71 @@
+.users {
+  overflow: hidden;
+
+  .inner-row {
+
+    @include wideTablet {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    min-height: 200px;
+    justify-content: space-around;
+  }
+
+  &__title-wrapper {
+    width: 25%;
+
+    @include smallDesktop {
+      width: 30%;
+    }
+
+    @include wideTablet {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    max-width: 325px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.43;
+
+    @include wideTablet {
+      max-width: unset;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+
+    @include wideTablet {
+      width: 100%;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 34px;
+
+    @include tablet {
+      width: 50%;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

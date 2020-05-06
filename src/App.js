@@ -27,7 +27,7 @@ function App() {
         <hr className='separator'/>
         <Features features={featuresList}/>
         <ToolboxApp/>
-        {/*<Users users={usersList}/>*/}
+        <Users users={usersList}/>
         <FAQ/>
         <Contacts/>
       </main>

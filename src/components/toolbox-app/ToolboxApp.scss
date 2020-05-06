@@ -5,9 +5,12 @@
   margin-bottom: 80px;
   background-color: $black;
 
+  @include wideTablet {
+    margin-bottom: 64px;
+  }
+
   @include mobile {
     height: 250px;
-    margin-bottom: 60px;
   }
 
   &__inner {
