@@ -13,7 +13,7 @@ const Feature = ({icon, alt, title, description}) => {
 const Features = ({features}) => {
 
   return (
-    <section className='features container'>
+    <section className='features container' id='overview'>
       <div className='inner-row'>
         <div className='inner-col'>
           <img className='features__image' src='/images/features.png' alt='An abstract man near the schedule'/>

@@ -1,4 +1,10 @@
 .features {
+  margin-bottom: 9px;
+  padding-top: 71px;
+
+  @include mobile {
+    padding-top: 46px;
+  }
 
   .inner-col {
 

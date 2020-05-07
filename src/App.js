@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <main className='main' id='overview'>
+      <main className='main'>
         <Hero/>
         <Products data={IDEs} rowAmount={4}/>
         <Products data={profilers} rowAmount={3}/>

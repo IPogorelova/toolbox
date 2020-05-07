@@ -105,3 +105,11 @@
     }
   }
 }
+
+.toolbox-wrapper {
+  padding-top: 71px;
+
+  @include mobile {
+    padding-top: 46px;
+  }
+}

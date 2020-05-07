@@ -1,26 +1,39 @@
 import * as React from 'react'
 import cn from 'classnames'
+import {useMatchMedia} from '../../utils/hooks'
 
 const Header = () => {
   const [activeLink, setActiveLink] = React.useState('Overview')
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
-  React.useEffect(() => {
-    document.addEventListener('click', (e) => {
-      if ((!e.target.classList.length || !e.target.classList.contains('header__nav')) && isMenuOpen) {
+  const toggleRef = React.useRef(null);
+  const isMobile = useMatchMedia('screen and (min-width: 768px)')
+
+  const useOutsideAlerter = (ref) => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target) && isMobile) {
         setIsMenuOpen(false)
-        console.log(isMenuOpen)
       }
-    })
-  }, [isMenuOpen])
+    }
+
+    React.useEffect(() => {
+      document.addEventListener('click', handleClickOutside);
+      return () => {
+        // Unbind the event listener on clean up
+        document.removeEventListener('click', handleClickOutside);
+      };
+    }, [ref])
+  }
+  useOutsideAlerter(toggleRef)
+
   return (
     <header className='header'>
       <div className='container header__inner'>
         <a href='/' className='header__logo'>Toolbox</a>
         <button
+          ref={toggleRef}
           className='header__menu-button'
           onClick={(e) => {
-            e.stopPropagation()
             if (window.innerWidth <= 550) {
               setIsMenuOpen(!isMenuOpen)
             }
@@ -54,6 +67,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
+      <div className={cn('overlay', {'overlay_shown' : isMenuOpen})}/>
     </header>
   )
 }
