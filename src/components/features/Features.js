@@ -37,7 +37,7 @@ const Features = ({features}) => {
         </div>
         <div className='inner-col features__list'>
           {
-            features.map((item, i) => <Feature key={`feature-${i}`} icon={item.icon} title={item.title} description={item.description}/> )
+            features.map((item, i) => <Feature key={`feature-${i}`} icon={item.icon} title={item.title} description={item.description} alt={item.alt}/> )
           }
         </div>
       </div>
