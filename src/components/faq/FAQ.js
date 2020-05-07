@@ -33,7 +33,24 @@ const FAQ = () => {
       </div>
       <div className='inner-row'>
         <div className='inner-col'>
-          <img className='faq__image' src='/images/faq.png' alt='Man greetings somebody'/>
+          <picture className='faq__image'>
+            <source
+              type='image/webp'
+              srcSet='/images/faq.webp 1x,
+                      /images/faq@2x.webp 2x'
+            />
+            <source
+              type='image/png'
+              srcSet='/images/faq.png 1x,
+                      /images/faq@2x.png 2x'
+            />
+            <img
+              alt='An abstract man greetings somebody'
+              src='/images/faq.png'
+              srcSet='/images/faq.png 1x,
+                      /images/faq@2x.png 2x'
+            />
+          </picture>
         </div>
         <div className='inner-col'>
           <div className='faq__offer'>

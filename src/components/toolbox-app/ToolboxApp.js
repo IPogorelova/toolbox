@@ -5,12 +5,24 @@ const ToolboxApp = () => {
   return (
     <section className='toolbox-wrapper' id='toolbox-app'>
       <div className='toolbox-app'>
-        <div className="toolbox-app__inner">
+        <div className='toolbox-app__inner'>
           <picture className='toolbox-app__image'>
-            {/*<source srcSet='svg/page.webp' type='image/webp'/>*/}
-            <source srcSet='images/page.jpg' type='image/png'/>
-
-            <img src='/images/page.jpg' alt='Toolbox App panel'/>
+            <source
+              type='image/webp'
+              srcSet='/images/page.webp 1x,
+                      /images/page@2x.webp 2x'
+            />
+            <source
+              type='image/jpg'
+              srcSet='/images/page.jpg 1x,
+                      /images/page@2x.jpg 2x'
+            />
+            <img
+              alt='Toolbox App panel'
+              src='/images/page.jpg'
+              srcSet='/images/page.jpg 1x,
+                      /images/page@2x.jpg 2x'
+            />
           </picture>
           <div className='toolbox-app__info'>
             <h2 className='toolbox-app__title'>Maintain your tools with the Toolbox App</h2>

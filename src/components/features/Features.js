@@ -16,7 +16,24 @@ const Features = ({features}) => {
     <section className='features container' id='overview'>
       <div className='inner-row'>
         <div className='inner-col'>
-          <img className='features__image' src='/images/features.png' alt='An abstract man near the schedule'/>
+          <picture className='features__image'>
+            <source
+              type='image/webp'
+              srcSet='/images/features.webp 1x,
+                      /images/features@2x.webp 2x'
+            />
+            <source
+              type='image/png'
+              srcSet='/images/features.png 1x,
+                      /images/features@2x.png 2x'
+            />
+            <img
+              alt='An abstract man near the schedule'
+              src='/images/features.png'
+              srcSet='/images/features.png 1x,
+                      /images/features@2x.png 2x'
+            />
+          </picture>
         </div>
         <div className='inner-col features__list'>
           {
