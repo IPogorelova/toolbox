@@ -4,11 +4,12 @@
   @include tablet {
 
     img {
-      width: 60px;
-      margin-bottom: 20px;
+      width: 72px;
+      margin-bottom: 10px;
 
       @include mobile {
-        width: 50px;
+        width: 48px;
+        margin-bottom: 4px;
       }
     }
   }
@@ -20,6 +21,12 @@
     font-weight: 700;
     color: $black;
     transition: color $base-animation;
+
+    @include mobile {
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 6px;
+    }
   }
 
   &__tags {

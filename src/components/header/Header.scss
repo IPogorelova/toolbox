@@ -2,13 +2,13 @@
   position: fixed;
   top: -1px;
   width: 100vw;
-  height: 76px;
+  height: 71px;
   background-color: $white;
   border-bottom: 1px solid $grey-light;
   z-index: 2;
 
   @include mobile {
-    height: 58px;
+    height: 47px;
   }
 
   &__inner {
@@ -34,6 +34,7 @@
     width: 50%;
     height: 100%;
     padding: 10px 0;
+    font-size: 15px;
     text-align: left;
     color: $black;
     background-color: white;
@@ -48,6 +49,10 @@
       margin-left: 14px;
       border: 8px solid transparent;
       border-top: 8px solid $black;
+
+      @include mobile {
+        top: 9px;
+      }
     }
 
     @include mobile {
@@ -64,14 +69,15 @@
 
     @include mobile {
       position: absolute;
-      top: 57px;
+      top: 46px;
       left: 0;
       display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      width: fit-content;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
       height: fit-content;
-      padding: 20px 35px 25px 15px ;
+      padding: 20px 15px 25px 15px;
       background-color: white;
       border: 1px solid $grey-light;
       z-index: 1;
@@ -92,12 +98,7 @@
     }
 
     @include mobile {
-      margin-bottom: 20px;
       margin-right: 0;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
   }
 }

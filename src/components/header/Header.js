@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className='header'>
       <div className='container header__inner'>
-        <a href='/' className='header__logo'>Toolbox App</a>
+        <a href='/' className='header__logo'>Toolbox</a>
         <button
           className='header__menu-button'
           onClick={(e) => {
@@ -41,7 +41,7 @@ const Header = () => {
             </li>
             <li className='header__link'>
               <a
-                href='#app'
+                href='#toolbox-app'
                 className='link'
                 onClick={(e) => setActiveLink('Toolbox App')}
               >

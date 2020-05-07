@@ -9,9 +9,11 @@ body {
   overflow-x: hidden;
   background-color: $white;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 28px;
   font-weight: normal;
   color: $black;
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -20,6 +22,7 @@ body {
   justify-content: space-between;
   width: 100vw;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -47,14 +50,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .main {
-  padding-top: 175px;
+  padding-top: 71px;
 
   @include tablet {
-    padding-top: 135px;
+    padding-top: 71px;
   }
 
   @include mobile {
-    padding-top: 115px;
+    padding-top: 47px;
   }
 }
 
@@ -148,6 +151,10 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.text {
+  color: $grey-dark;
+}
+
 .section-title {
   margin-bottom: 30px;
   font-size: 24px;
@@ -159,6 +166,11 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 1px;
   margin: 80px 0 80px;
   border: 1px solid $grey-light;
+
+  @include tablet {
+    margin-top: 39px;
+    margin-bottom: 64px;
+  }
 }
 
 .visually-hidden {

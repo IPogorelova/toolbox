@@ -1,11 +1,14 @@
 .tag {
   display: block;
+  min-width: 54px;
   margin-right: 16px;
-  padding: 6px 26px;
-  font-size: 14px;
+  padding: 4px 26px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
   color: $grey-dark;
   background-color: $grey;
-  border-radius: 6px;
+  border-radius: 4px;
 
   @include smallDesktop {
     margin-right: 10px;

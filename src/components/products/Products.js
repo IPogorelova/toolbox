@@ -50,7 +50,7 @@ const Products = ({data, rowAmount}) => {
   if (isMobile) {
     return (
       <section className='products container'>
-        {description && <p className='products__description'>{description}</p>}
+        {description && <p className='text products__description'>{description}</p>}
         <h2 className='products__title'>{title}</h2>
         <div className='products__items'>
           {
@@ -74,7 +74,7 @@ const Products = ({data, rowAmount}) => {
             <h2 className='section-title'>{title}</h2>
           </div>
           <div className='inner-col'>
-            {description && <p className='products__description'>{description}</p>}
+            {description && <p className='text products__description'>{description}</p>}
           </div>
           </div>
         <div className='inner-row'>

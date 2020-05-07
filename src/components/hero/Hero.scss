@@ -1,4 +1,9 @@
 .hero {
+  margin-top: 96px;
+
+  @include mobile {
+    margin-top: 65px;
+  }
 
   @include wideTablet {
 
@@ -21,8 +26,8 @@
   }
 
   &__image {
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 485px;
 
     @include wideTablet {
       display: block;
@@ -33,28 +38,36 @@
 
   &__title {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 
     @include mobile {
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
   }
 
   &__subtitle {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
+
+    @include smallDesktop {
+      margin-bottom: 24px;
+    }
 
     @include mobile {
-      margin-bottom: 15px;
+      margin-bottom: 16px;
     }
   }
 
   &__button {
     width: 200px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+
+    @include mobile {
+      margin-bottom: 16px;
+    }
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
