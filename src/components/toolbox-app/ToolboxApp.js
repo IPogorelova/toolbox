@@ -13,7 +13,7 @@ const ToolboxApp = () => {
             <img src='/images/page.jpg' alt='Toolbox App panel'/>
           </picture>
           <div className='toolbox-app__info'>
-            <h2 className='section-title toolbox-app__title'>Maintain your tools with the Toolbox App</h2>
+            <h2 className='toolbox-app__title'>Maintain your tools with the Toolbox App</h2>
             <p className='toolbox-app__description'>Simple installations, updates, and more</p>
             <a href='#' className='toolbox-app__link'>Learn more</a>
           </div>
