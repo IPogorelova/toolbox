@@ -19,7 +19,7 @@
       }
 
       &:last-of-type {
-        margin-bottom: 60px;
+        margin-bottom: 64px;
         order: 1;
       }
     }
@@ -42,12 +42,16 @@
 
     @include mobile {
       margin-bottom: 16px;
+      font-size: 42px;
+      line-height: 48px;
     }
   }
 
   &__subtitle {
     margin-top: 0;
     margin-bottom: 48px;
+    font-size: 28px;
+    line-height: 40px;
 
     @include smallDesktop {
       margin-bottom: 24px;
@@ -55,11 +59,13 @@
 
     @include mobile {
       margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 32px;
     }
   }
 
   &__button {
-    width: 200px;
+    width: 174px;
     margin-bottom: 24px;
 
     @include mobile {
