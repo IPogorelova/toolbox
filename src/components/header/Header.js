@@ -32,7 +32,7 @@ const Header = () => {
         <a href='/' className='header__logo'>Toolbox</a>
         <button
           ref={toggleRef}
-          className='header__menu-button'
+          className={cn('header__menu-button', {'header__menu-button_active' : isMenuOpen})}
           onClick={(e) => {
             if (window.innerWidth <= 550) {
               setIsMenuOpen(!isMenuOpen)

@@ -49,14 +49,23 @@
       margin-left: 14px;
       border: 8px solid transparent;
       border-top: 8px solid $black;
+      transition: top $base-animation, transform $base-animation;
 
       @include mobile {
-        top: 9px;
+        top: 8px;
       }
     }
 
     @include mobile {
       display: block;
+    }
+
+    &_active {
+
+      &::after {
+        top: 0;
+        transform: rotate(180deg);
+      }
     }
   }
 
