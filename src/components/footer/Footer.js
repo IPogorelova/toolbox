@@ -42,27 +42,27 @@ const Footer = () => {
             <span className='footer__subtitle footer__text'>Follow JetBrains</span>
             <ul className='footer__socials'>
               <li className='footer__icon'>
-                <a href='#' title='JetBrains on Facebook'>
+                <a href='https://www.facebook.com/JetBrains' title='JetBrains on Facebook'>
                   <Fb/>
                 </a>
               </li>
               <li className='footer__icon'>
-                <a href='#' title='JetBrains on Twitter'>
+                <a href='https://twitter.com/jetbrains' title='JetBrains on Twitter'>
                   <Twitter/>
                 </a>
               </li>
               <li className='footer__icon'>
-                <a href='#' title='JetBrains on LinkedIn'>
+                <a href='https://www.linkedin.com/company/jetbrains' title='JetBrains on LinkedIn'>
                   <LinkedIn/>
                 </a>
               </li>
               <li className='footer__icon'>
-                <a href='#' title='JetBrains on YouTube'>
+                <a href='https://www.youtube.com/user/JetBrainsTV' title='JetBrains on YouTube'>
                   <YouTube/>
                 </a>
               </li>
               <li className='footer__icon'>
-                <a href='#' title='JetBrains blog'>
+                <a href='https://blog.jetbrains.com/' title='JetBrains blog'>
                   <Blog/>
                 </a>
               </li>
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         <div className='footer__row'>
           <div className='footer__copyright'>
-            <span className='footer__text'>2000 - 2017 JetBrains s.r.o. All rights reserved.</span>
+            <span className='footer__text'>&copy; 2000 - 2017 JetBrains s.r.o. All rights reserved.</span>
             <span className='footer__text'>Developed with drive and IntelliJ IDEA</span>
           </div>
           <div className="footer__privacy">

@@ -1,25 +1,29 @@
 .footer {
   width: 100vw;
-  padding: 32px 0;
+  padding: 37px 0;
   background-color: $black;
 
   @include mobile {
-    padding: 15px 0 50px;
+    padding: 16px 0 64px;
   }
 
   &__row {
     display: flex;
     width: fit-content;
     min-width: 50%;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
 
     &:last-of-type {
       margin-bottom: 0;
     }
 
-    @include wideTablet {
+    @include smallDesktop {
+      flex-wrap: wrap;
+    }
+
+    @include mobile {
       flex-direction: column;
-      margin-bottom: 10px;
+      margin-bottom: 31px;
     }
   }
 
@@ -27,40 +31,43 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
-    margin-left: 80px;
-    padding-top: 20px;
+    margin-left: 90px;
+    padding-top: 11px;
 
     &:first-of-type {
       margin-left: 0;
     }
 
-    @include wideTablet {
+    @include smallDesktop {
+      margin-left: 120px;
+    }
+
+    @include tablet {
+      margin-left: 64px;
+    }
+
+    @include mobile {
       margin-left: 0;
-      margin-bottom: 16px;
+      margin-top: 32px;
+      padding-top: 0;
     }
   }
 
   &__text {
-    font-size: 0.85rem;
+    font-size: 15px;
+    line-height: 24px;
     color: $white;
     opacity: 1;
   }
 
   &__nav {
-    margin: 14px 0 0;
+    margin: 8px 0 0;
     padding: 0;
 
     li {
-      margin-bottom: 4px;
+      line-height: 24px;
       cursor: pointer;
       transition: opacity $base-animation;
-
-      &:hover {
-
-        .footer__link {
-          opacity: 1;
-        }
-      }
 
       &:last-of-type {
         margin-bottom: 0;
@@ -71,7 +78,7 @@
   &__socials {
     display: flex;
     padding: 0;
-    margin: 24px 0 0;
+    margin: 15px -6px 0;
 
     .footer__icon {
       display: flex;
@@ -97,25 +104,29 @@
       }
 
       a {
-        display: block;
+        display: flex;
         width: 100%;
         height: 100%;
-      }
-
-      svg {
-        max-width: 24px;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
 
   &__logo {
-    width: 122px;
-    height: 122px;
-    margin-left: -40px;
+    width: 100px;
+    height: 115px;
+    margin-left: -20px;
+    margin-right: 38px;
+
+    @include smallDesktop {
+      margin-left: -30px;
+      margin-right: 10px;
+    }
 
     @include mobile {
-      width: 48px;
-      height: 48px;
+      width: 43px;
+      height: 43px;
     }
 
     &_full {
@@ -137,9 +148,11 @@
   }
 
   &__link {
+    font-size: 15px;
+    line-height: 24px;
     font-weight: normal;
     color: $white;
-    opacity: 0.5;
+    opacity: 0.6;
     transition: opacity $base-animation;
 
     &:hover {
@@ -154,18 +167,29 @@
   &__copyright {
     margin-right: 10px;
 
-    @include wideTablet {
+    @include tablet {
+      min-width: fit-content;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @include mobile {
       display: flex;
       flex-direction: column;
-
-      .footer__text {
-        margin-bottom: 16px;
-      }
     }
 
     .footer__text {
-      margin-right: 15px;
-      opacity: 0.2;
+      margin-right: 20px;
+      opacity: 0.3;
+
+      @include tablet {
+        min-width: fit-content;
+      }
+
+      @include mobile {
+        min-width: unset;
+        margin-bottom: 12px;
+      }
     }
   }
 
@@ -182,7 +206,7 @@
         right: -10px;
         top: 1px;
         width: 2px;
-        height: 13px;
+        height: 11px;
         background-color: $white;
       }
 

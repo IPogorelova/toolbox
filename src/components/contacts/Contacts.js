@@ -32,7 +32,7 @@ const Contacts = () => {
               <span className='check__box'>
                 <span className='check__tick'/>
               </span>
-              By submitting this form I agree to the <a href='#'>JetBrains Privacy Policy</a>
+              By submitting this form I agree to the <a href='https://www.jetbrains.com/company/privacy.html'>JetBrains Privacy Policy</a>
             </label>
             <button
               className='button'
@@ -47,19 +47,19 @@ const Contacts = () => {
           <h3 className='contacts__subtitle'>Follow us</h3>
           <ul className='contacts__socials'>
             <li className='contacts__social-item'>
-              <a href='#' className='contacts__link'>
+              <a href='https://twitter.com/jetbrains' className='contacts__link'>
                 <Twitter/>
                 @AllProductsPack on Twitter
               </a>
             </li>
             <li className='contacts__social-item'>
-              <a href='#' className='contacts__link'>
+              <a href='https://blog.jetbrains.com/' className='contacts__link'>
                 <Blog/>
                 JetBrains Blog
               </a>
             </li>
             <li className='contacts__social-item'>
-              <a href='#' className='contacts__link'>
+              <a href='https://youtrack.jetbrains.com/issues' className='contacts__link'>
                 <Bug/>
                 Bug and Issue Tracker
               </a>
