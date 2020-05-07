@@ -117,11 +117,10 @@
   padding-top: 71px;
 
   @include wideTablet {
-    margin-bottom: 96px;
+    margin-bottom: 64px;
   }
 
   @include mobile {
     padding-top: 46px;
-    margin-bottom: 64px;
   }
 }
