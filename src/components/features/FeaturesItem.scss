@@ -7,18 +7,28 @@
   }
 
   &__icon {
-    width: 40px;
-    margin-bottom: 10px;
+    width: 48px;
+    margin-bottom: 14px;
+
+    @include mobile {
+      margin-bottom: 12px;
+    }
   }
 
   &__title {
-    margin-bottom: 15px;
-    font-size: 18px;
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 700;
+
+    @include mobile {
+      margin-bottom: 12px;
+    }
   }
 
   &__description {
     margin-top: 0;
+    color: $grey-dark;
 
     @include tablet {
       max-width: 500px;
