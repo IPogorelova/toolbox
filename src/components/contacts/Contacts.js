@@ -1,7 +1,7 @@
 import * as React from 'react'
-import {ReactComponent as Bug} from './images/bug.svg'
-import {ReactComponent as Blog} from './images/jb-blog-orange.svg'
-import {ReactComponent as Twitter} from './images/twitter-orange.svg'
+import {ReactComponent as Bug} from './svg/bug.svg'
+import {ReactComponent as Blog} from './svg/jb-blog-orange.svg'
+import {ReactComponent as Twitter} from './svg/twitter-orange.svg'
 
 
 const Contacts = () => {

@@ -7,7 +7,7 @@ const ToolboxApp = () => {
       <div className='toolbox-app'>
         <div className="toolbox-app__inner">
           <picture className='toolbox-app__image'>
-            {/*<source srcSet='images/page.webp' type='image/webp'/>*/}
+            {/*<source srcSet='svg/page.webp' type='image/webp'/>*/}
             <source srcSet='images/page.jpg' type='image/png'/>
 
             <img src='/images/page.jpg' alt='Toolbox App panel'/>

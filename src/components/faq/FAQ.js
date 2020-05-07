@@ -1,4 +1,5 @@
 import * as React from 'react'
+import {ReactComponent as Download} from './svg/download.svg'
 
 const FAQ = () => {
 
@@ -39,7 +40,10 @@ const FAQ = () => {
             <p className='section-title'>
               Enhance your productivity and speed up coding with JetBrains tools!
             </p>
-            <a className='faq__download-link' href='#'>Download the All Products Pack infographics</a>
+            <a className='faq__download-link' href='#'>
+              <Download/>
+              Download the All Products Pack infographics
+            </a>
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 import * as React from 'react'
-import {ReactComponent as Fb} from './images/fb.svg'
-import {ReactComponent as Blog} from './images/jbblog.svg'
-import {ReactComponent as LinkedIn} from './images/linkedin.svg'
-import {ReactComponent as Twitter} from './images/twitter.svg'
-import {ReactComponent as YouTube} from './images/youtube.svg'
+import {ReactComponent as Fb} from './svg/fb.svg'
+import {ReactComponent as Blog} from './svg/jbblog.svg'
+import {ReactComponent as LinkedIn} from './svg/linkedin.svg'
+import {ReactComponent as Twitter} from './svg/twitter.svg'
+import {ReactComponent as YouTube} from './svg/youtube.svg'
 
 const Footer = () => {
 

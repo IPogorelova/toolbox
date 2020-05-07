@@ -52,7 +52,7 @@ const Products = ({data, rowAmount, titleMb}) => {
     return (
       <section className='products container'>
         {description && <p className='text products__description'>{description}</p>}
-        <h2 className='products__title'>{title}</h2>
+        <h2 className='section-title products__title'>{title}</h2>
         <div className='products__items'>
           {
             items.map((item, i) =>
@@ -70,8 +70,6 @@ const Products = ({data, rowAmount, titleMb}) => {
   } else if (isSmallDesktop) {
     return (
       <section className='products container'>
-        {/*<div className='inner-row products__title-container'>*/}
-        {/*</div>*/}
         <div className='inner-row'>
           <div className='inner-col'>
             <h2 className='section-title products__title'>{title}</h2>
