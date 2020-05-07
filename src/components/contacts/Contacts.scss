@@ -5,7 +5,7 @@
   background-color: $grey;
 
   @include tablet {
-    padding: 64px 0 62px;
+    padding: 64px 0;
   }
 
   .container {
@@ -39,10 +39,6 @@
   &__subtitle {
     font-size: 20px;
     line-height: 28px;
-
-    @include tablet {
-      margin-bottom: 16px;
-    }
   }
 
   &__form {
@@ -60,6 +56,10 @@
       background-size: 24px 24px;
       background-position: calc(100% - 16px) center;
       background-repeat: no-repeat;
+
+      @include smallDesktop {
+        max-width: 375px;
+      }
     }
 
     .check {
@@ -89,6 +89,11 @@
   &__socials {
     padding: 0;
     margin-top: 24px;
+    margin-bottom: 0;
+
+    @include tablet {
+      margin-top: 16px;
+    }
   }
 
   &__social-item {
