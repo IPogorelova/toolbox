@@ -23,7 +23,7 @@ function App() {
       <main className='main'>
         <Hero/>
         <Products data={IDEs} rowAmount={4}/>
-        <Products data={profilers} rowAmount={3}/>
+        <Products data={profilers} rowAmount={3} titleMb={true}/>
         <hr className='separator'/>
         <Features features={featuresList}/>
         <ToolboxApp/>

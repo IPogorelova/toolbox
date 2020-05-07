@@ -91,7 +91,7 @@ export const IDEs = {
 }
 
 export const profilers = {
-  title: '2 Extentions & 3 Profilers',
+  title: '2\u00A0Extentions & 3\u00A0Profilers',
   description: '',
   items: [
     {

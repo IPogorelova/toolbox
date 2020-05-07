@@ -1,7 +1,7 @@
 .tag {
   display: block;
   min-width: 54px;
-  margin-right: 16px;
+  margin-right: 12px;
   padding: 4px 26px;
   font-size: 12px;
   line-height: 16px;
@@ -11,8 +11,13 @@
   border-radius: 4px;
 
   @include smallDesktop {
+    min-width: 44px;
+    padding: 4px 12px;
+  }
+
+  @include mobile {
     margin-right: 10px;
-    padding: 6px 12px;
+    padding: 5px;
   }
 
   &:last-of-type {
