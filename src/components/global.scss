@@ -219,12 +219,14 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   line-height: 16px;
   color: $grey-dark;
+  cursor: pointer;
 
   &__input {
     position: absolute;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    opacity: 0;
 
     &:checked {
 
